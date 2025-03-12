@@ -3,6 +3,5 @@ public class Main2 {
         System.out.println("Hello world!");
         System.out.println("New Version Change");
         // New comment 222
-        // NEW BRANCH TEST
     }
 }
