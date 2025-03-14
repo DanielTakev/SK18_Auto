@@ -1,3 +1,0 @@
-You are reading the first line of the file
-You are reading the second line of the file
-end of file
