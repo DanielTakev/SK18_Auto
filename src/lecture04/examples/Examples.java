@@ -1,52 +1,65 @@
 package lecture04.examples;
 
 
+import java.util.Scanner;
+
 public class Examples {
     public static void main(String[] args) {
-            int week = 11;
-            String day = "Sunday";
-            switch (day) {
-                case "Friday":
-                    System.out.println("Friday ");
-                    break;
-                case "Saturday":
-                    System.out.println("Saturday ");
-                    break;
-                case "Sunday":
-                    System.out.println("Sunday ");
-                    if (week == 11) {
-                        System.out.println("11 week!!!!!");
-                    }
-                    break;
-                default:
-                    System.out.println("Default ");
-            }
-            System.out.println("END!!!");
 
-            if (day == "Friday") {
-                System.out.println("Friday ");
-            } else if (day == "Saturday") {
-                System.out.println("Saturday ");
-            } else if (day == "Sunday") {
-                System.out.println("Sunday ");
-                if (week == 11) {
-                    System.out.println("11 week!!!!!");
-                }
-            } else {
-                System.out.println("Default ");
-            }
+    displayCombinedResults(20, 5, 10, true);
+    displayCombinedResults(15, 12, 8, false);
+    displayCombinedResults(30, -3, 1, false);
+
+//    int week = 11;
+//        String day = "Sunday";
+//        switch (day) {
+//            case "Friday":
+//                System.out.println("Friday ");
+//                break;
+//            case "Saturday":
+//                System.out.println("Saturday ");
+//                break;
+//            case "Sunday":
+//                System.out.println("Sunday ");
+//                if (week == 11) {
+//                    System.out.println("11 week!!!!!");
+//                }
+//                break;
+//            case "Tuesday":
+//                System.out.println("Tuesday ");
+//                if (week == 11) {
+//                    System.out.println("11 week!!!!!");
+//                }
+//                break;
+//            default:
+//                System.out.println("Default ");
+//        }
+//        // SAME
+//        if (day == "Friday") {
+//            System.out.println("Friday ");
+//        } else if (day == "Saturday") {
+//            System.out.println("Saturday ");
+//        } else if (day == "Sunday") {
+//            System.out.println("Sunday ");
+//            if (week == 11) {
+//                System.out.println("11 week!!!!!");
+//            }
+//        } else {
+//            System.out.println("Default ");
+//        }
     }
-
 
     public static void demoArithmeticOperations() {
         int productsCount = 100;
         int num2 = 200;
         int result = (productsCount + num2);
         System.out.println("productsCount + num2: " + result);
-        System.out.println("productsCount - num2: " + (productsCount - num2));
-        System.out.println("productsCount * num2: " + (productsCount * num2));
-        System.out.println("productsCount / num2: " + (productsCount / num2));
-        System.out.println("productsCount % num2: " + (productsCount % num2));
+        System.out.println("productsCount - num2: " + (productsCount - num2)); // -100
+        System.out.println("productsCount * num2: " + (productsCount * num2)); // 20000
+        float divide = (productsCount / (float)num2);
+        System.out.println("cast to float productsCount / num2 : " + divide);
+        System.out.println("productsCount / num2: " + (productsCount / num2)); // 0
+        System.out.println("productsCount % num2: " + (productsCount % num2)); // 100
 
         productsCount++; // 101
         num2--; // 199
@@ -61,6 +74,7 @@ public class Examples {
     public static void demoAssignmentOperators() {
         int num1 = 10;
         int num2 = 20;
+        System.out.println(num2);
 
         num2 = num1;
         System.out.println("= Output: " + num2);
@@ -160,29 +174,41 @@ public class Examples {
     }
 
     public static void demoIfStatement() {
-        int num = 70;
+        Scanner myScanner = new Scanner(System.in);
+        int num = myScanner.nextInt();
+
         System.out.println("Start!");
         if (num < 100) {
             System.out.println("number is less than 100");
-            int num2222 = 3;
+            int nextInt = myScanner.nextInt();
 
-            if (num2222 == 3) {
-                System.out.println("num2222 is equal to 3");
+            if (nextInt == 3) {
+                System.out.println("nextInt is equal to 3");
             }
         } else {
-            System.out.println("END!");
+            System.out.println("ELSE!");
         }
-        // Continue here if the check in row 131 is false
+        System.out.println("END!");
     }
 
     public static void demoNestedIfStatement() {
-        int num = 70;
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+        int alaBala = 0;
+        if (num != 10) {
+            alaBala = 11;
+            System.out.println(alaBala);
+        }
+
         if (num < 100) {
+            alaBala = 1123;
             System.out.println("number is less than 100");
             if (num > 50) {
                 System.out.println("number is greater than 50");
             }
         }
+        System.out.println(alaBala);
     }
 
     public static void demoIfElseStatement() {
@@ -195,7 +221,8 @@ public class Examples {
     }
 
     public static void demoIfElseIfStatement() {
-        int num = 1234;
+        int num = 14;
+
         if (num < 100 && num >= 10) {
             System.out.println("Its a two digit number");
         } else if (num < 1000 && num >= 100) {
@@ -203,12 +230,13 @@ public class Examples {
         } else if (num < 10000 && num >= 1000) {
             System.out.println("Its a four digit number");
         } else {
-            System.out.println("number is not between 1 & 99999");
+            System.out.println("number is not between 10 & 99999");
         }
     }
 
     public static void demoSwitchStatement() {
-        int num = 2;
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
         switch (num) {
             case 1:
                 System.out.println("Case1 ");
@@ -222,5 +250,13 @@ public class Examples {
             default:
                 System.out.println("Default ");
         }
+    }
+
+    public static void displayCombinedResults(int age, int num1, int num2, boolean isRaining) {
+        String status = (age >= 18) ? "Adult" : "Minor";
+        int max = (num1 > num2) ? num1 : num2;
+        String activity = isRaining ? "Stay inside" : "Go outside";
+
+        System.out.println("Age: " + age + ", Status: " + status + ", Max(num1, num2): " + max + ", Activity: " + activity);
     }
 }
