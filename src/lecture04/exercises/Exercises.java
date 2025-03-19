@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercises {
     public static void main(String[] args) {
-        convertTemperature();
+        planVacation();
     }
 
     public static void buildTriangle() {
@@ -41,7 +41,6 @@ public class Exercises {
 
         } else {
             System.out.println(validMessage + "Multifaceted");
-
         }
     }
 
@@ -134,6 +133,7 @@ public class Exercises {
     }
 
     public static void planVacation() {
+
         String vacationType;
         double budget;
         double dailyBudget;
@@ -161,15 +161,19 @@ public class Exercises {
         switch (vacationType) {
             case "Beach":
                 if (dailyBudget < 50) {
+                    System.out.println("Daily budget: " + dailyBudget);
                     System.out.println(bulgariaDestinationMessage);
                 } else {
+                    System.out.println("Daily budget: " + dailyBudget);
                     System.out.println(nonBulgariaDestinationMessage);
                 }
                 break;
             case "Mountain":
                 if (dailyBudget < 30) {
+                    System.out.println("Daily budget: " + dailyBudget);
                     System.out.println(bulgariaDestinationMessage);
                 } else {
+                    System.out.println("Daily budget: " + dailyBudget);
                     System.out.println(nonBulgariaDestinationMessage);
                 }
                 break;

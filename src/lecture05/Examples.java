@@ -1,16 +1,20 @@
 package lecture05;
 
+import java.util.Scanner;
+
 public class Examples {
 
     public static void main(String[] args) {
-        demoNestedLoop();
+        demoBreakStatement();
     }
 
-
-
     public static void demoForLoop() {
+        int innerNum = 1;
+
         for (int num = 10; num > 1; num--) {
-            System.out.println("The value of i is:" + num);
+            System.out.println("The value of NUM is: " + num);
+            innerNum++;
+            System.out.println(innerNum);
         }
     }
 
@@ -21,7 +25,7 @@ public class Examples {
         // Outer loop for rows
         for (int row = 1; row <= totalRows; row++) {
             System.out.println("Checking Row " + row + ":");
-
+            // Check for seats -> seatsPerRow = X
             // Inner loop for seats in each row
             for (int seat = 1; seat <= seatsPerRow; seat++) {
                 // Simulate checking each seat
@@ -34,10 +38,16 @@ public class Examples {
     }
 
     public static void demoWhileLoop() {
-        int num = 10;
-        while (num > 1) {
+        System.out.println("Enter integer: ");
+        Scanner myScanner = new Scanner(System.in);
+        int num = myScanner.nextInt();
+        while (num > 0) {
+            System.out.println("Still available seats.");
             System.out.println(num);
             num--;
+            if (num == 1) {
+                System.out.println("This is the last seat!!!!!");
+            }
         }
     }
 
@@ -51,30 +61,38 @@ public class Examples {
     }
 
     public static void demoForEachLoop() {
-        int[] numbers = {3, 5, -12, 0, 24};
-        for (int num : numbers) {
-            System.out.println("number: " + num);
+        int[] numbers = {3, 5, -12, 0, 24, -44, 11};
+
+        for (int myNumIntoArray : numbers) {
+            System.out.println("number in for-each: " + myNumIntoArray);
+        }
+
+        System.out.println("length: " + numbers.length);
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("numbers in for: " + numbers[i]);
         }
     }
 
     public static void demoContinueStatement() {
         for (int num = 0; num <= 6; num++) {
-            if (num == 4) {
+            if (num == 2) {
+                System.out.print("You don't pass! Next time, sorry!");
                 continue;
             }
-            System.out.print(num + " ");
+            System.out.println("You pass!");
+            System.out.println(num + " ");
         }
-
     }
 
     public static void demoBreakStatement() {
         int num;
         for (num = 100; num >= 10; num--) {
             System.out.println("num: " + num);
-            if (num == 99) {
+            if (num == 98) {
                 break;
             }
         }
-        System.out.println("Out of for-loop");
+        System.out.println("Out of for-loop: " + num);
     }
 }

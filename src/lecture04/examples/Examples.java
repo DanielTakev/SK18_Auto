@@ -206,7 +206,11 @@ public class Examples {
             System.out.println("number is less than 100");
             if (num > 50) {
                 System.out.println("number is greater than 50");
+            } else {
+                System.out.println("small else");
             }
+        } else {
+            System.out.println("BIG ELSE");
         }
         System.out.println(alaBala);
     }
@@ -240,6 +244,7 @@ public class Examples {
         switch (num) {
             case 1:
                 System.out.println("Case1 ");
+                System.out.println(" Test ");
                 break;
             case 2:
                 System.out.println("Case2 ");
