@@ -62,7 +62,7 @@ public class Examples {
 
     public static void demoForEachLoop() {
         int[] numbers = {3, 5, -12, 0, 24, -44, 11};
-
+        // Test comment
         for (int myNumIntoArray : numbers) {
             System.out.println("number in for-each: " + myNumIntoArray);
         }
