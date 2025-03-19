@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="997f3e54-627d-4d9d-b3e6-d43f7e486dd7" name="Changes" comment="Added lecture05">
-      <change afterPath="$PROJECT_DIR$/SK18_Auto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/Java_Basic.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/src/Main2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_Basic/src/Main3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK18_Auto/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK18_Auto/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK18_Auto/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK18_Auto/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SK18_Auto/SK18_Auto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture05/Examples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture05/Examples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lecture05/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lecture05/Exercises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +59,7 @@
     "Application.lecture11.examples.inheritance.constructors.Examples.executor": "Debug",
     "Application.lecture11.examples.polymorphism.Examples.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "all-lectures",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/takev/Documents/GitHub/SK18_Auto",
     "project.structure.last.edited": "Modules",
