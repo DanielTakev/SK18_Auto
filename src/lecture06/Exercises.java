@@ -3,18 +3,18 @@ import java.util.*; // Another way to add dependency
 
 public class Exercises {
     public static void main(String[] args) {
-        printDynamicMatrixElements();
+//        printDynamicMatrixElements();
 
-//          // https://docs.oracle.com/javase/tutorial/essential/io/formatting.html
-//        int myNumber = 2;
-//        double sqRoot = Math.sqrt(myNumber);
-//
-//        System.out.format("The square root of %d is %f.%n", myNumber, sqRoot);
+        // https://docs.oracle.com/javase/tutorial/essential/io/formatting.html
+        int myNumber = 2;
+        double sqRoot = Math.sqrt(myNumber);
 
-//        String[] myArrayIntegers = new String[6];
-//        for (String element: myArrayIntegers) {
-//            System.out.println(element);
-//        }
+        System.out.format("The square root of %d is %f.%n", myNumber, sqRoot);
+
+        String[] myArrayIntegers = new String[6];
+        for (String element: myArrayIntegers) {
+            System.out.println(element);
+        }
     }
 
     public static void printArraySum() {
