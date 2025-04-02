@@ -155,9 +155,19 @@ public class Examples {
     }
 
     // Method to check if a number is even
-    public static boolean isEven(int number) {
-        return number % 2 == 0;
+    Scanner scanner = new Scanner(System.in);
+    int userInput = scanner.nextInt();
+
+    public static boolean isEven() {
+        System.out.println("Enter int number: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        return number % 2 == 0; // true
     }
+
+    boolean isEvenVar = isEven();
+    // boolean isEvenVar = isEven(userInput);
+    // isEvenVar -> false
 
     /**
      * Demo method overloading
