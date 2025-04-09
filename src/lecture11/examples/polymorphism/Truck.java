@@ -26,4 +26,15 @@ public class Truck extends Vehicle {
     public void performMaintenance() {
         System.out.println("Performing maintenance on the truck, including checking the cargo hold and brakes.");
     }
+
+
+
+
+    public void click() {
+        System.out.println("Az sym Selenium - click");
+    }
+
+    public void type() {
+        System.out.println("Az sym Selenium - type");
+    }
 }

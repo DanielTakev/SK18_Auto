@@ -10,7 +10,8 @@ public class Examples {
         Car myCar = new Car();
 
         // Accessing the attributes and methods of the Car class
-        myCar.brand = "Toyota";
+//        myCar.brand = "Toyota";
+        myCar.setBrand("Toyota2");
         myCar.maxSpeed = 200;
         myCar.numberOfDoors = 4;
         myCar.fuelType = "Gasoline";
@@ -25,7 +26,7 @@ public class Examples {
         Vehicle myVehicle = new Vehicle();
 
         // Accessing the attributes and methods of the Vehicle class
-        myVehicle.brand = "Honda";
+        myVehicle.setBrand("Honda");
         myVehicle.maxSpeed = 150;
 
         myVehicle.startEngine();  // Method from Vehicle

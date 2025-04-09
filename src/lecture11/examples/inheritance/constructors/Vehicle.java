@@ -2,11 +2,13 @@ package lecture11.examples.inheritance.constructors;
 
 // Parent class: Vehicle
 public class Vehicle {
+
     public String brand;
     public String model;
     public int maxSpeed;
 
     // Constructor for Vehicle class
+    // Vehicle myVehicle = new Vehicle("BMW", "X3", 250);
     public Vehicle(String brand, String model, int maxSpeed) {
         this.brand = brand;
         this.model = model;
@@ -25,7 +27,7 @@ public class Vehicle {
 
     // Method to display vehicle details
     public void displayVehicleDetails() {
-        System.out.println("Make: " + brand);
+        System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Max Speed: " + maxSpeed);
     }

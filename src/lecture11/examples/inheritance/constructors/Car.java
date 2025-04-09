@@ -2,6 +2,7 @@ package lecture11.examples.inheritance.constructors;
 
 // Subclass: Car, which extends Vehicle
 public class Car extends Vehicle {
+
     public int numberOfDoors;
     public String fuelType;
 
@@ -26,5 +27,6 @@ public class Car extends Vehicle {
     public void displayCarDetails() {
         displayVehicleDetails();
         System.out.println("Number of Doors: " + numberOfDoors);
+        System.out.println("Fuel type: " + fuelType);
     }
 }

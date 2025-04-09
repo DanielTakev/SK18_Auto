@@ -1,11 +1,8 @@
 package lecture11.examples.inheritance.constructors;
 
 public class Examples {
-    public static void main(String[] args) {
-        demoInheritanceConstructors();
-    }
 
-    public static void demoInheritanceConstructors() {
+    public static void main(String[] args) {
         // Creating an object of the Car class
         Car myCar = new Car("Toyota", "Supra", 200, 4, "Gasoline");
 

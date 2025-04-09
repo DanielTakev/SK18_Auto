@@ -1,6 +1,7 @@
 package lecture11.examples.inheritance.constructors;
 
 public class Truck extends Vehicle {
+
     int cargoCapacity;
 
     // Constructor for Truck
