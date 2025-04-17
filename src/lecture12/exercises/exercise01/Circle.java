@@ -1,4 +1,4 @@
-package lecture12.exarcises.exercise01;
+package lecture12.exercises.exercise01;
 
 public class Circle implements Shape {
     private double radius;

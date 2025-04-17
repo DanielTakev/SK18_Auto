@@ -1,4 +1,4 @@
-package lecture12.exarcises.exercise02;
+package lecture12.exercises.exercise02;
 
 public class Employee {
     private int id;

@@ -1,4 +1,5 @@
-package lecture12.exarcises.exercise01;
+package lecture12.exercises.exercise01;
+
 
 public class Main {
     public static void main(String[] args) {
